@@ -227,7 +227,13 @@ if __name__ == '__main__':
                     prior_x, prior_y, prior_z = getPrior(idFrame, i)
 
                     diffX = prior_x - average_pose[i]
-                    rotPrior = rotate3D(diffX, 0, 0)
+                    tmp[i] = diffX
+                    if i % 4 == 3:
+                        rotPrior = rotate3D(diffX, 0, 0)
+                    elif i % 4 == 0:
+                        rotPrior = rotate3D(diffX + tmp[i - 1], 0, 0)
+                    else:
+                        rotPrior = rotate3D(diffX + tmp[i - 1] + tmp[i - 2], 0, 0)
                     RR[:, :, i] = rotPrior
 
                 poseRot = inv(RR[:, :, partsList_parent[i]]) @ RR[:, :, i]
