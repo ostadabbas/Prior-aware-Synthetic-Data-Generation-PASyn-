@@ -1,0 +1,67 @@
+---
+#body_model:
+#  gender: neutral
+#  bm_fname: /home/drow/human_body_prior/src/result/model/model.npz
+
+general:
+  verbosity: 0
+  expr_id:
+  dataset_id: '1' #SMPLx neutral
+  rnd_seed: 100
+  work_basedir: ./result/training
+  dataset_basedir: ./result
+
+logging:
+  expr_msg:
+  num_bodies_to_display: 25
+  work_dir:
+  dataset_dir:
+  render_during_training: False
+  best_model_fname:
+
+train_parms:
+  batch_size:
+  num_epochs: 1000
+  restore_optimizer: False
+  gen_optimizer:
+    type: Adam
+    args:
+      lr: 0.0001
+      weight_decay: 0.00001
+  lr_scheduler:
+    type: ReduceLROnPlateau
+    args:
+      #metrics: #val_loss
+      verbose: true
+      patience: 5
+  early_stopping:
+    monitor: val_loss
+    min_delta: 0.0
+    patience: 100
+    verbose: True
+    mode: min
+  keep_extra_loss_terms_until_epoch: 150
+  loss_weights:
+    loss_kl_wt: 0.05
+    loss_rec_wt: 4
+    loss_matrot_wt: 1
+    loss_jtr_wt: 2
+
+
+data_parms:
+  num_workers: 1 # Used for dataloaders
+  amass_dir: ./data/
+  num_timeseq_frames: 1
+  amass_splits:
+    vald:
+      - vald
+    train:
+      - train
+    test:
+      - test
+
+
+model_params:
+  num_neurons : 512
+  latentD : 16
+
