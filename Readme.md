@@ -60,7 +60,7 @@ age dataset generation. For more details, please refer to our paper.
 ## Synthetic Animal Data Generation
 If you want to generate your own synthetic dataset, please follow the [README.md] in the folder (Under construction).
 
-##Experiment
+## Experiment
 To reproduce the results in the tables above, you have to follow the <a href='https://github.com/AlexTheBad/AP-10K/edit/main/README.md'>Readme.md</a> for setup.
 There is the file structure of the AP-10K below. 
 
