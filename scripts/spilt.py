@@ -9,18 +9,18 @@ import cv2
 import math
 
 #path to anotations(json) file
-coco_file = 'C:\\Users\\52563\\mmpose\\data\\ap10k\\annotations\\ap10k-test-split1.json'
-with open(coco_file, "r") as read_content:
+annotations = 'D:\\deeplabcut\\dataset\\testset\\ap10test\\SynAP\\annotations_99+3000 (SynAP)\\ap10k-train-split1.json'
+with open(annotations, "r") as read_content:
     data = json.load(read_content)
 
 images = data['images']
 annos = data['annotations']
 
 #path to the whole dataset
-source_fd = 'F:\\ap-60k\\zebra\\raw'
+source_fd = 'F:\\ap-10k\\ap-10k\\data'
 
 #path to the splited dataset
-target_fd = 'F:\\ap-60k\\zebra\\test1'
+target_fd = 'F:\\ap-10k\\ap-10k\\data2'
 
 for i in range(len(images)):
     img_name = images[i]['file_name']
