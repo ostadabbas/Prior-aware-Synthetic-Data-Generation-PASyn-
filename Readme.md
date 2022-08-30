@@ -12,7 +12,7 @@
 
 ## Introduction
 <p align="center">
-<img src="figure/overview.jpg" width="400">
+<img src="figure/overview.jpg" >
 </p>
 This repository is the official repository of Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very
 Limited Real Data. We purposed a prior-aware synthetic animal data generation pipeline called PASyn to augment the animal 
@@ -24,7 +24,7 @@ well as collected from real animals in a zoo.
 
 ## Framework
 <p align="center">
-<img src="figure/pasyn.jpg" width="400">
+<img src="figure/pasyn.jpg">
 </p>
 Our proposed prior-aware synthetic data generation (PASyn) pipeline enables robust animal
 pose estimation under severe label scarcity and divergence. The architecture of PASyn is
@@ -47,7 +47,7 @@ age dataset generation. For more details, please refer to our paper.
 | MMpose | ResNet-50 | R(99)+S(3K) | 86.7 |95.6  |95.8  |69.9  |**87.3**  |**84.3**  |84.3|90.8 |91.2  |84.4  |77.2 |
 | MMpose | ResNet-50| R(99)+S(5K) | **84.4** |**97.0**  | **97.9** |74.5  | 85.3 | 84.2 |**84.5** | **94.6** | **91.4** |**88.0** |**85.6**|
 
-###The effect of SynAP with large set of real data in pose estimation results of HRNet-w32 \cite{hrnet} tested on Zebra-300 (300 real images). 
+### The effect of SynAP with large set of real data in pose estimation results of HRNet-w32 \cite{hrnet} tested on Zebra-300 (300 real images). 
 | Train Set| Real Zebra  | Average |Eye | Nose | Neck | Shoulders | Elbows | F-Paws | Hips |Knees | B-Paws | RoT | 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | R(8K)(SOTA) | &check;  |91.4| **97.5** | 97.2 |79.4 | 87.8| 90.3 |93.8| 95.3 | 94.1 | 89.5| 86.6|
