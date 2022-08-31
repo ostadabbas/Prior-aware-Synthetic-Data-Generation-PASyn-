@@ -14,7 +14,7 @@
 <p align="center">
 <img src="figure/overview.jpg" >
 </p>
-This repository is the official repository of <a href='https://arxiv.org/abs/2208.13944'>[Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very
+This repository is the official repository of <a href='https://arxiv.org/abs/2208.13944'>Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very
 Limited Real Data</a>. We purposed a prior-aware synthetic animal data generation pipeline called PASyn to augment the animal 
 pose data essential for robust pose estimation. PASyn generates a probabilistically-valid synthetic pose dataset, SynAP,
 through training  a variational generative model on several animated 3D animal models. In addition, a style transfer strategy
