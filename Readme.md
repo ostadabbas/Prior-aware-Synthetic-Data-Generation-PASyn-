@@ -14,8 +14,8 @@
 <p align="center">
 <img src="figure/overview.jpg" >
 </p>
-This repository is the official repository of Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very
-Limited Real Data. We purposed a prior-aware synthetic animal data generation pipeline called PASyn to augment the animal 
+This repository is the official repository of [Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very
+Limited Real Data](https://arxiv.org/abs/2208.13944). We purposed a prior-aware synthetic animal data generation pipeline called PASyn to augment the animal 
 pose data essential for robust pose estimation. PASyn generates a probabilistically-valid synthetic pose dataset, SynAP,
 through training  a variational generative model on several animated 3D animal models. In addition, a style transfer strategy
 is utilized to blend the synthetic animal image into the real backgrounds.  We evaluate the improvement made by our approach
@@ -134,6 +134,29 @@ zebra-300
 4. Run the code provided by AP-10K:
 ```
 python tools/test.py configs/animal/2d_kpt_sview_rgb_img/topdown_heatmap/ap10k/hrnet_w32_ap10k_256x256.py <DET_CHECKPOINT_FILE>
+```
+## Citation
+
+If you use our code, datasets or models in your research, please cite with:
+
+```
+@misc{https://doi.org/10.48550/arxiv.2208.13944,
+  doi = {10.48550/ARXIV.2208.13944},
+  
+  url = {https://arxiv.org/abs/2208.13944},
+  
+  author = {Jiang, Le and Liu, Shuangjun and Bai, Xiangyu and Ostadabbas, Sarah},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very Limited Real Data},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
 ## Acknowledgement
 Thanks for the open-source
