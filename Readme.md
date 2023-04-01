@@ -143,7 +143,7 @@ If you use our code, datasets or models in your research, please cite with:
 @inproceedings{Jiang2022animal,
   title={Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very Limited Real Data},
   author={Jiang, Le and Liu, Shuangjun and Bai, Xiangyu  and Ostadabbas, Sarah},
-  booktitle={The British Machine Vision Conference (BMVC) \textbf{(acceptance rate: 33\%)}},
+  booktitle={The British Machine Vision Conference (BMVC)},
   month={11},
   year={2022}
 }
