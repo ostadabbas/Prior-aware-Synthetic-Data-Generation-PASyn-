@@ -140,22 +140,12 @@ python tools/test.py configs/animal/2d_kpt_sview_rgb_img/topdown_heatmap/ap10k/h
 If you use our code, datasets or models in your research, please cite with:
 
 ```
-@misc{https://doi.org/10.48550/arxiv.2208.13944,
-  doi = {10.48550/ARXIV.2208.13944},
-  
-  url = {https://arxiv.org/abs/2208.13944},
-  
-  author = {Jiang, Le and Liu, Shuangjun and Bai, Xiangyu and Ostadabbas, Sarah},
-  
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
-  title = {Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very Limited Real Data},
-  
-  publisher = {arXiv},
-  
-  year = {2022},
-  
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@inproceedings{Jiang2022animal,
+  title={Prior-Aware Synthetic Data to the Rescue: Animal Pose Estimation with Very Limited Real Data},
+  author={Jiang, Le and Liu, Shuangjun and Bai, Xiangyu  and Ostadabbas, Sarah},
+  booktitle={The British Machine Vision Conference (BMVC) \textbf{(acceptance rate: 33\%)}},
+  month={11},
+  year={2022}
 }
 ```
 ## Acknowledgement
